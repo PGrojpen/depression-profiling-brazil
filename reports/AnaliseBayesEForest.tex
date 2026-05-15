@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\begin{document}
+
+
+\section*{Resultados com o Classificador Naive Bayes}
+
+
+Os resultados apresentados nas Tabelas 1 e 2 referem-se ao desempenho do classificador \textbf{Naive Bayes}. Foram avaliados três modelos: modelo original (sem balanceamento), undersampling e oversampling.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Modelo} & \textbf{Accuracy} & \textbf{0\_Precision} & \textbf{0\_Recall} & \textbf{0\_F1} \\
+\midrule
+Original       & 0.83 & 0.32 & 0.51 & 0.40 \\
+Undersampling  & 0.81 & 0.30 & 0.55 & 0.39 \\
+Oversampling   & 0.81 & 0.31 & 0.60 & 0.41 \\
+\bottomrule
+\end{tabular}
+\caption{Desempenho dos modelos com foco na classe 0 e acurácia.}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Modelo} & \textbf{1\_Precision} & \textbf{1\_Recall} & \textbf{1\_F1} & \textbf{F1\_Macro} \\
+\midrule
+Original       & 0.93 & 0.87 & 0.90 & 0.65 \\
+Undersampling  & 0.94 & 0.84 & 0.89 & 0.64 \\
+Oversampling   & 0.94 & 0.83 & 0.88 & 0.65 \\
+\bottomrule
+\end{tabular}
+\caption{Desempenho dos modelos com foco na classe 1 e média macro do \textit{F1}.}
+\end{table}
+
+Os resultados mostram que o Naive Bayes teve melhor desempenho geral na classe majoritária (classe 1 - sem diagnóstico), independentemente do balanceamento usado. Já na classe minoritária (classe 0 - com diagnóstico), o \textit{oversampling} trouxe um pequeno ganho no \textit{recall} (0.60) e no \textit{F1-score} (0.41), o que indica uma leve melhora nessa classificação. No entanto, o \textit{F1\_Macro} se manteve praticamente igual entre os modelos, sugerindo que o balanceamento mão contribuiu para o equilíbrio geral entre as classes.
+
+
+\section*{Resultados com o Classificador Random Forest}
+
+
+Os resultados das Tabelas 3 e 4 referem-se ao desempenho do classificador \textbf{Random Forest}, com e sem otimização de hiperparâmetros, para os seguintes modelos: modelo original (sem balanceamento), undersampling e oversampling.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Modelo} & \textbf{Accuracy} & \textbf{0\_Precision} & \textbf{0\_Recall} & \textbf{0\_F1} \\
+\midrule
+Original                 & 0.90 & 0.64 & 0.14 & 0.23 \\
+Undersampling            & 0.75 & 0.27 & 0.73 & 0.40 \\
+Oversampling             & 0.89 & 0.49 & 0.23 & 0.31 \\
+Original Otimizado       & 0.89 & 0.55 & 0.19 & 0.28 \\
+Undersampling Otimizado  & 0.75 & 0.27 & 0.72 & 0.39 \\
+Oversampling Otimizado   & 0.89 & 0.48 & 0.22 & 0.30 \\
+\bottomrule
+\end{tabular}
+\caption{Desempenho do Random Forest com foco na classe 0 e acurácia.}
+\end{table}
+
+\vspace{0.5cm}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Modelo} & \textbf{1\_Precision} & \textbf{1\_Recall} & \textbf{1\_F1} & \textbf{F1\_Macro} \\
+\midrule
+Original                 & 0.90 & 0.99 & 0.94 & 0.59 \\
+Undersampling            & 0.96 & 0.76 & 0.85 & 0.62 \\
+Oversampling             & 0.91 & 0.97 & 0.94 & 0.62 \\
+Original Otimizado       & 0.91 & 0.98 & 0.94 & 0.61 \\
+Undersampling Otimizado  & 0.96 & 0.76 & 0.84 & 0.62 \\
+Oversampling Otimizado   & 0.91 & 0.97 & 0.94 & 0.62 \\
+\bottomrule
+\end{tabular}
+\caption{Desempenho do Random Forest com foco na classe 1 e média macro do \textit{F1}.}
+\end{table}
+
+\vspace{0.5cm}
+
+Os resultados mostram que o \textbf{Random Forest} teve alta acurácia nos modelos sem undersampling, especialmente no modelo original (0.90). A classe majoritária manteve boa taxa de acerto, com \textit{F1} variando entre 0.84 e 0.94 em todas as abordagens.
+
+Para a classe minoritária, os modelos de \textit{undersampling} alcançaram os melhores valores de \textit{recall} (0.73 ,  0.72) e \textit{F1} (0.40 , 0.39), embora com menor precisão (0.27).
+
+Os modelos de \textit{oversampling} tiveram desempenho equilibrado entre os outros modelos, com recall um pouco maior que os modelos sem balanceamento (0.23 \& 0{,22} > 0{,14} \& 0.19) e com precisão maior do que a dos modelos de \textit{undersampling} (0.49 \& 0.48 > 0.27).
+
+A métrica \textit{F1\_Macro} permaneceu estável nos melhores modelos (\textit{undersampling} e \textit{oversampling}), 0.62, indicando que o balanceamento ajudou a reduzir o viés do modelo para a classe majoritária. Dependendo do contexto, ambos modelos poderiam ser utilizados para uma descoberta de conhecimento, porém, em um contexto de diagnóstico médico, devemos priorizar o \textit{recall} da classe minoritária, evitando ao máximo falsos negativos.
+
+
+\end{document}

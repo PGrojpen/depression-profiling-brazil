@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{longtable}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage{subfig}
+\usepackage{multirow}
+
+\begin{document}
+
+\begingroup
+\tiny
+\begin{longtable}
+{|p{5cm}|p{4cm}|p{4cm}|}
+\hline
+\multicolumn{3}{|c|}{\textbf{Descrição do Mapa Conceitual – Domínio de problema: Depressão}} \\ \hline
+\multicolumn{3}{|c|}{\textbf{Dimensão: Hábitos de saúde}} \\ \hline
+\textbf{Aspectos} & \textbf{Atributos associados} & \textbf{Atributos mapeados} \\ \hline
+{Uso de Drogas: O uso de drogas como tabaco e álcool podem intensificar a depressão, fazendo usuários que têm depressão mais identificáveis. \cite{beneton2021sintomas}} & {Uso diário de tabaco ou algum tipo de droga; Frequência de consumo de álcool.} & {Módulo P - Estilo de vida: P50 até P55; P27 até P33c.} \\ \hline
+{Atividade física: A prática de exercício físico, bem como de Práticas Integrativas e Complementares em Saúde, está associada à melhora de pacientes com depressão. \cite{Oliveira_2023} \cite{schwambach2023uso}} & {Prática de algum tipo de exercício e/ou PIC; Frequência de exercício físico ou esporte.} & {Módulo P - Estilo de vida: P34, P35 e P37. Módulo J - Utilização de serviços de saúde: J53.} \\ \hline
+{Tempo de tela: O tempo de tela em diferentes aparelhos eletrônicos pode influenciar a saúde mental. \cite{Li_2022}} & {Tempo diário de uso de aparelhos eletrônicos (celular, televisão etc.) para lazer.} & {Módulo P - Estilo de vida: P45a e P45b.} \\ \hline
+\multicolumn{3}{|c|}{\textbf{Dimensão: Condições socioeconômicas}} \\ \hline
+\textbf{Aspectos} & \textbf{Atributos associados} & \textbf{Atributos mapeados} \\ \hline
+{Condições precárias de trabalho: \cite{Yang_2024} relata que trabalhadores em situação de instabilidade possuem um risco maior de desenvolver sintomas depressivos.} & {Ausência de benefícios; Poluição sonora; Carga de trabalho excessiva.} & {Módulo E - Características de trabalho das pessoas de 14 anos ou mais de idade: E14c, E19. Módulo M - Características do trabalho e apoio social: M5c até M11.} \\ \hline
+{Tempo de deslocamento para o trabalho: Tempos de deslocamento mais longos estão associados a estresse e a uma saúde mental mais precária, aumentando o risco de depressão. \cite{Wang_2019}} & {Horas no trânsito; Uso de transporte público ou particular.} & {Módulo M - Características do trabalho e apoio social: M3b e M4a.} \\ \hline
+{Dificuldade financeira: A perspectiva de dificuldade financeira e/ou desemprego é um fator estressante. \cite{Cunha_2012}} & {Desemprego; Renda bruta mensal; Tempo afastado do trabalho.} & {E1, E2. E3, E4, E5, E10a, E22.} \\ \hline
+{Escolaridade: O nível de escolaridade está associado a melhores condições de vida. A baixa escolaridade é um fator prevalente em indivíduos com depressão. \cite{Campos_2021}} & {Nível de escolaridade.} & {Módulo D - Características de educação dos moradores: D1, D3a e D9a.} \\ \hline
+{Relações familiares: Conflitos conjugais, divórcio e problemas com filhos estão associados ao desenvolvimento de depressão na população adulta. \cite{Jorgetto_2021}} & {Estado civil; Relações com a família.} & {Módulo M - Características do trabalho e apoio social: M14a.} \\ \hline
+{Isolamento social: Medidas de restrição impostas durante a pandemia de COVID-19 evidenciaram que o isolamento social contribui para o aumento de episódios depressivos. \cite{Almeida_2020}} & {Frequência de encontros sociais ou religiosos.} & {Módulo M - Características do trabalho e apoio social: M14a até M19a.} \\ \hline
+{Condições de moradia: “Viver em moradias precárias é um estressor psicossocial que pode levar a problemas de saúde mental.” \cite{Kim_2021}} & {} & {Módulo A - Informações do Domicílio: A1 até A16a.} \\ \hline
+\multicolumn{3}{|c|}{\textbf{Dimensão: Condições físicas e mentais}} \\ \hline
+\textbf{Aspectos} & \textbf{Atributos associados} & \textbf{Atributos mapeados} \\ \hline
+{Capacidade diminuída para se concentrar e pensar: A depressão pode afetar a capacidade cognitiva. \cite{Silva_2023}} & {} & {Módulo N - Percepção do estado de saúde: N13.} \\ \hline
+{Agitação ou retardo psicomotor: Pessoas com grau mais severo de depressão podem ter tempo de resposta maiores \cite{Lamichhane_2022}} & {} & {Módulo N - Percepção do estado de saúde: N15.} \\ \hline
+{Apatia e falta de interesse: Esses são os principais sintomas da depressão \cite{beck2016depressão}} & {} & {Módulo N - Percepção do estado de saúde: N11 e N12.} \\ \hline
+{Obesidade e compulsão alimentar: Pessoas obesas e com compulsões alimentares têm maior chance de ter depressão. \cite{Fusco_2020}} & {IMC; Compulsões alimentares.} & {Módulo P - Estilos de vida: P1a e P4a. Módulo N - Percepção do estado de saúde: N14.} \\ \hline
+{Bioquímica cerebral: Hipóteses indicam que a deficiência de neurotransmissores como a noradrenalina e serotonina pode levar à depressão. \cite{Diniz_2020}} & {Resultado de exames de sangue e urina.} & {Não está disponível na base de dados da PNS 2019.} \\ \hline
+{Violência: Casos de violência interpessoal aumentam a propensão a episódios depressivos. \cite{10.1371/journal.pgph.0001207}} & {Tipo de violência e frequência.} & {Módulo V - Violência.} \\ \hline
+{Doença crônica: Pessoas com doenças crônicas podem apresentar depressão como uma doença secundária. \cite{Sousa_2021}} & {Tem doença(s) crônica(s)} & {Módulo Q - Doenças crônicas: Q079, Q03001 e Q06306.} \\ \hline
+{Percepção sobre a própria saúde: O bem-estar psicológico pode ser influenciado pela percepção que um indivíduo tem sobre a própria saúde. \cite{LEITE_2019}} & {Opinião sobre a própria saúde; Autoestima.} & {Módulo N - Percepção do estado de saúde: N1a, N16 até N18.} \\ \hline
+\multicolumn{3}{|c|}{\textbf{Dimensão: Características do indivíduo}} \\ \hline
+\textbf{Aspectos} & \textbf{Atributos associados} & \textbf{Atributos mapeados} \\ \hline
+{Sexo: O diagnóstico de depressão é mais prevalente em mulheres no Brasil. \cite{MELEIRO2023100192}} & {Sexo} & {Módulo C – Características gerais dos moradores: C6.} \\ \hline
+{Idade: O diagnóstico é mais comum em indivíduos acima de 40 anos. \cite{MELEIRO2023100192}} & {Idade} & {Módulo C – Características gerais dos moradores: C8.} \\ \hline
+\caption{Tabela descritiva do mapa conceitual.}
+\end{longtable} 
+\endgroup
+
+\end{document}

@@ -1,0 +1,27 @@
+# Claude Code
+.claude/
+
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.cache
+
+# Ambientes virtuais Python
+venv/
+env/
+.env/
+automl_env/
+**/site-packages/
+
+# Arquivos temporários e redundantes
+*.pkl
+*.pyc
+__pycache__/
+
+# Arquivos excluídos desta versão
+code/
+pns2019/
+resources/
+/Dicionario_e_input_20220530/
+Descrevendo_o_perfil_de_pessoas_com_depressão_nas_regiões_Sudeste_e_Centro_Oeste_do_Brasil_por_meio_de_Mineração_de_Dados(1).pdf
+ReciboSBBD.pdf
