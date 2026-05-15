@@ -140,6 +140,6 @@ Se utilizar este trabalho, por favor cite:
 |---|---|
 | Pedro Grojpen Couto | Autor |
 | Glória Eleonor F. Alves | Autora |
-| Luís Enrique Zárate | Orientador |
+| Luis Enrique Zárate | Orientador |
 
 **Instituição:** Pontifícia Universidade Católica de Minas Gerais (PUC Minas)
