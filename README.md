@@ -124,7 +124,7 @@ Se utilizar este trabalho, por favor cite:
 ```bibtex
 @inproceedings{couto2025depressao,
   title     = {Descrevendo o perfil de pessoas com depressão nas regiões Sudeste e Centro-Oeste do Brasil por meio de Mineração de Dados},
-  author    = {Couto, Pedro Grojpen and Alves, Glória Eleonor F. and Zárate, Luís Enrique},
+  author    = {Alves, Glória Eleonor F. and Couto, Pedro Grojpen and Zárate, Luis Enrique},
   booktitle = {Anais Estendidos do XL Simpósio Brasileiro de Banco de Dados (SBBD)},
   year      = {2025},
   publisher = {SBC},
@@ -138,8 +138,8 @@ Se utilizar este trabalho, por favor cite:
 
 | Nome | Papel |
 |---|---|
-| Pedro Grojpen Couto | Autor |
 | Glória Eleonor F. Alves | Autora |
+| Pedro Grojpen Couto | Autor |
 | Luis Enrique Zárate | Orientador |
 
 **Instituição:** Pontifícia Universidade Católica de Minas Gerais (PUC Minas)
